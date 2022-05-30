@@ -1,0 +1,41 @@
+.striked{
+    text-decoration: line-through;
+}
+
+.todo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    font-size: large;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.todoBg{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    font-size: large;
+    background-color: white;
+    border: 1px solid black;
+    background-color: #e4f2fd ;
+    text-decoration: line-through;
+}
+
+
+
+.right{
+    position:absolute;
+    left:45%;
+}
+
