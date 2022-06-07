@@ -4,7 +4,7 @@ import { TodoInput } from './TodoInput'
 import { TodoItem } from './TodoItem'
 import { TodoList } from './TodoList'
 import { v4 as uuidv4 } from 'uuid';
-import { Deleted } from './Deleted '
+
 
 
 export const Todo = () => {
