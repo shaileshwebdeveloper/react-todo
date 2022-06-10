@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "./todoitem.module.css"
 
-export const TodoItem = ({ value, deleteTodo, todo}) => {
+export const TodoItem = ({ value, deleteTodo, todo, setDeleted, deleted}) => {
 
   const [isCompleted, setIsCompleted] = useState(todo.isCompleted);
 
@@ -12,6 +12,11 @@ export const TodoItem = ({ value, deleteTodo, todo}) => {
         checked = {isCompleted}
         onChange ={ (e) => {
             setIsCompleted(e.target.checked)
+
+            if(e.target.checked){
+              setDeleted([...deleted, todo])
+              deleteTodo(value)
+            }
         }}
       />
      
